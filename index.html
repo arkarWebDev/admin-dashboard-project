@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyal Phyu Online Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./custom/styles.css" />
+  </head>
+  <body>
+    <section class="main container-fluid">
+      <div class="row">
+        <div class="col-12 col-xl-2">
+          <div class="aside-bar vh-100">
+            <i
+              class="fa-solid fa-x text-primary nav-hide d-block d-xl-none"
+            ></i>
+            <div class="d-flex align-items-center ms-5 logo-div pt-4">
+              <i class="fa-solid fa-store fs-4 text-primary me-1"></i>
+              <h4 class="logo text-primary m-0">Kyal Phyu OS</h4>
+            </div>
+            <div>
+              <ul class="aside-li">
+                <li>
+                  <a href="#" class="">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Viewers</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="./index.html" class="active">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- order-->
+              <ul class="aside-li">
+                <p>Order Management</p>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>Today Orders</span>
+                    <span class="noti-num">10</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-filter"></i>
+                    <span>Filter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>All Order</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- order end -->
+
+              <!-- item management start  -->
+              <ul class="aside-li">
+                <p>Item Management</p>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <span>Add Items</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Item List</span>
+                    <span class="noti-num">40</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-folder"></i>
+                    <span>Collections</span>
+                    <span class="noti-num">10</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- item management end -->
+
+              <!-- promotion management start -->
+              <ul class="aside-li">
+                <p>Promotion Management</p>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-gift"></i>
+                    <span>Add promotion</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bars-progress"></i>
+                    <span>Promotion List</span>
+                    <span class="noti-num">0</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- promotion management end -->
+
+              <!-- user management start  -->
+              <ul class="aside-li">
+                <p>User Management</p>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Add Staff</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Staff List</span>
+                    <span class="noti-num">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span>Customer List</span>
+                    <span class="noti-num">100</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- user management end -->
+
+              <!-- user management-2 start  -->
+              <ul class="aside-li">
+                <p>User Management</p>
+                <li>
+                  <a href="./add-item.html">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Add Item</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./item-list.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Items List</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- user management-2 end -->
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-10 vh-100 content">
+            <div class="row p-2">
+              <!-- content nav start  -->
+              <div
+                class="header bg-primary col-12 d-flex justify-content-between align-items-center mb-4 p-2 rounded"
+              >
+                <i
+                  class="fa-solid fa-bars text-white nav-show d-block d-xl-none"
+                ></i>
+                <form
+                  action=""
+                  class="d-flex align-items-center d-none d-xl-block"
+                >
+                  <input type="text" class="form-control-sm me-1" />
+                  <i
+                    class="fa-solid fa-magnifying-glass text-primary p-1 bg-white fs-5 rounded"
+                  ></i>
+                </form>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-light dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./img/admin.jpg" class="admin-img" alt="" /> Arkar
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- content nav end -->
+
+              <!-- card start -->
+              <div class="col-12 col-lg-6 col-xl-3 rounded">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="fa-solid fa-cart-arrow-down fs-1 text-primary me-5"
+                      ></i>
+                      <div class="ms-5">
+                        <h1 class="counter fw-bold">120</h1>
+                        <p>Today Order</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-3">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="fa-solid fa-user-group fs-1 text-primary me-5"
+                      ></i>
+                      <div class="ms-5">
+                        <h1 class="counter fw-bolder">800</h1>
+                        <p>Total Customers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-3">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="fa-solid fa-user-plus fs-1 text-primary me-5"
+                      ></i>
+                      <div class="ms-5">
+                        <h1 class="counter fw-bolder">200</h1>
+                        <p>New Viewer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-3">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="fa-solid fa-location-dot fs-1 text-primary me-5"
+                      ></i>
+                      <div class="ms-5">
+                        <h1 class="counter fw-bolder">60</h1>
+                        <p>Support Place</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card end -->
+
+              <!-- chart start -->
+              <div class="row">
+                <div class="col-12 col-lg-6 col-xl-8">
+                  <div class="card">
+                    <div class="card-body">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p>Orders and Viewers graph</p>
+                        <div>
+                          <img
+                            src="./img/man-av-1.jpg"
+                            class="av-img rounded-circle"
+                            alt=""
+                          />
+                          <img
+                            src="./img/man-av-2.jpg"
+                            class="av-img rounded-circle"
+                            alt=""
+                          />
+                          <img
+                            src="./img/woman-av-3.jpg"
+                            class="av-img rounded-circle"
+                            alt=""
+                          />
+                          <img
+                            src="./img/woman-av-4.jpg"
+                            class="av-img rounded-circle"
+                            alt=""
+                          />
+                          <img
+                            src="./img/man-av-5.jpg"
+                            class="av-img rounded-circle"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <canvas id="ov" height="138"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div>
+                        <p>Support Places</p>
+                      </div>
+                      <div>
+                        <canvas id="sp"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- chart end -->
+
+              <!-- sub table start -->
+              <div class="row mt-4">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div
+                        class="d-flex align-items-center justify-content-between px-1"
+                      >
+                        <p class="fs-4 text-primary">subscriber List</p>
+                        <i
+                          class="fa-solid fa-ellipsis-vertical text-primary fs-5"
+                        ></i>
+                      </div>
+                      <hr />
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Start Date</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Michael Austin</td>
+                            <td>ABC Fintech LTD.</td>
+                            <td>Jan 1,2019</td>
+                            <td>
+                              <span class="text-white badge bg-danger">Close</span>
+                            </td>
+                            <td>$ 1000.00</td>
+                            <td class="text-decoration-none">
+                              <a href="#"
+                                ><i
+                                  class="fa-solid fa-trash-can text-danger ms-3"
+                                ></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Aldin Rakić</td>
+                            <td>ACME Pvt LTD.</td>
+                            <td>Jan 10,2019</td>
+                            <td>
+                              <span
+                                class=" text-white badge bg-success"
+                                >Open</span
+                              >
+                            </td>
+                            <td>$ 3000.00</td>
+                            <td class="text-decoration-none">
+                              <a href="#"
+                                ><i
+                                  class="fa-solid fa-trash-can text-danger ms-3"
+                                ></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>İris Ylmaz</td>
+                            <td>Collboy Tech LTD.</td>
+                            <td>Jan 12,2019</td>
+                            <td>
+                              <span
+                                class=" text-white badge bg-success"
+                                >Open</span
+                              >
+                            </td>
+                            <td>$ 2000.00</td>
+                            <td class="text-decoration-none">
+                              <a href="#"
+                                ><i
+                                  class="fa-solid fa-trash-can text-danger ms-3"
+                                ></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Lidia Livescu</td>
+                            <td>My Fintech LTD.</td>
+                            <td>Jan 14,2019</td>
+                            <td>
+                              <span
+                                class="text-white badge bg-danger"
+                                >Close</span
+                              >
+                            </td>
+                            <td>$ 1100.00</td>
+                            <td class="text-decoration-none">
+                              <a href="#"
+                                ><i
+                                  class="fa-solid fa-trash-can text-danger ms-3"
+                                ></i
+                              ></a>
+                            </td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sub table end -->
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./vendor/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/waypoints/lib/jquery.waypoints.js"></script>
+  <script src="./vendor/Counter-Up-master/Counter-Up-master/jquery.counterup.min.js"></script>
+  <script src="./node_modules/chart.js/dist/chart.js"></script>
+  <script src="./custom/app.js"></script>
+
+  <script src="./custom/counter.js"></script>
+</html>

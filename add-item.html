@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyal Phyu Online Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./custom/styles.css" />
+  </head>
+  <body>
+    <section class="main container-fluid">
+      <div class="row">
+        <div class="col-12 col-xl-2">
+          <div class="aside-bar vh-100">
+            <i
+              class="fa-solid fa-x text-primary nav-hide d-block d-xl-none"
+            ></i>
+            <div class="d-flex align-items-center ms-5 logo-div pt-4">
+              <i class="fa-solid fa-store fs-4 text-primary me-1"></i>
+              <h4 class="logo text-primary m-0">Kyal Phyu OS</h4>
+            </div>
+            <div>
+              <ul class="aside-li">
+                <li>
+                  <a href="#" class="">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Viewers</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./index.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- order-->
+              <ul class="aside-li">
+                <p>Order Management</p>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>Today Orders</span>
+                    <span class="noti-num">10</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-filter"></i>
+                    <span>Filter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>All Order</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- order end -->
+
+              <!-- item management start  -->
+              <ul class="aside-li">
+                <p>Item Management</p>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <span>Add Items</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Item List</span>
+                    <span class="noti-num">40</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-folder"></i>
+                    <span>Collections</span>
+                    <span class="noti-num">10</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- item management end -->
+
+              <!-- promotion management start -->
+              <ul class="aside-li">
+                <p>Promotion Management</p>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-gift"></i>
+                    <span>Add promotion</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-bars-progress"></i>
+                    <span>Promotion List</span>
+                    <span class="noti-num">0</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- promotion management end -->
+
+              <!-- user management start  -->
+              <ul class="aside-li">
+                <p>User Management</p>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Add Staff</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Staff List</span>
+                    <span class="noti-num">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span>Customer List</span>
+                    <span class="noti-num">100</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- user management end -->
+
+              <!-- user management-2 start  -->
+              <ul class="aside-li">
+                <p>User Management</p>
+                <li class="active-li">
+                  <a href="./add-item.html" class="active-a">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Add Item</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./item-list.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Items List</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- user management-2 end -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-10 vh-100 content">
+          <div class="row p-2">
+            <!-- content nav start  -->
+            <div
+              class="header bg-primary col-12 d-flex justify-content-between align-items-center mb-4 p-2 rounded"
+            >
+              <i
+                class="fa-solid fa-bars text-white nav-show d-block d-xl-none"
+              ></i>
+              <form
+                action=""
+                class="d-flex align-items-center d-none d-xl-block"
+              >
+                <input type="text" class="form-control-sm me-1" />
+                <i
+                  class="fa-solid fa-magnifying-glass text-primary p-1 bg-white fs-5 rounded"
+                ></i>
+              </form>
+              <div class="dropdown">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="./img/admin.jpg" class="admin-img" alt="" /> Arkar
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- content nav end -->
+            <div class="row">
+              <div class="col-12">
+                <nav
+                  style="--bs-breadcrumb-divider: '>'"
+                  aria-label="breadcrumb"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <i class="fa-solid fa-house text-primary fs-6"></i>
+                    </li>
+                    <li class="breadcrumb-item text-primary">Item</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Add Item
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="col-12 col-xl-8">
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="d-flex align-items-center">
+                        <i
+                          class="fa-solid fa-circle-plus text-primary fs-4 me-1"
+                        ></i>
+                        <h4 class="fw-bold m-0">ADD ITEM</h4>
+                      </div>
+                      <button
+                        class="btn btn-outline-primary d-flex align-items-center justify-content-center"
+                      >
+                        <i class="fa-solid fa-bars fs-5"></i>
+                      </button>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="mb-3">
+                          <div class="mb-1">
+                            <label for="item-photo">Item Name</label>
+                          </div>
+                          <input type="file" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                          <div class="mb-1">
+                            <label for="item-photo">Item Photo</label>
+                            <i
+                              class="fa-solid fa-circle-info text-primary"
+                              title="Support only jpg and png format."
+                            ></i>
+                          </div>
+                          <input type="text" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                          <div class="mb-1">
+                            <label for="item-photo">Type</label>
+                          </div>
+                          <select name="" id="" class="form-select">
+                            <option value="">Select Type</option>
+                            <option value="man">Man clothes</option>
+                            <option value="woman">Woman clothes</option>
+                            <option value="child">Child clothes</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <div class="mb-1">
+                            <label for="item-photo">Main Category</label>
+                          </div>
+                          <select name="" id="main_select" class="form-select">
+                            <option value="" selected disabled>
+                              Select Main Category
+                            </option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <div class="mb-1">
+                            <label for="item-photo">Sub Category</label>
+                          </div>
+                          <select name="" id="sub_select" class="form-select">
+                            <option value="" selected disabled>
+                              Select Sub Category
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-xl-6">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <div class="mb-1">
+                                <label for="item-photo">Item Name</label>
+                              </div>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="mb-2">
+                              <div class="mb-1">
+                                <label for="item-photo">Unit</label>
+                              </div>
+                              <select name="" id="" class="form-select">
+                                <option value="">Select Unit</option>
+                                <option value="man">Man clothes</option>
+                                <option value="woman">Woman clothes</option>
+                                <option value="child">Child clothes</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <div class="mb-1">
+                                <label for="item-photo">Price</label>
+                              </div>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <div class="mb-1">
+                                <label for="item-photo">Description</label>
+                              </div>
+                              <textarea class="form-control" rows="8">
+Welcome from Kyal Phyu Oline Shop .</textarea
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <button
+                      class="btn btn-primary d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="fa-solid fa-circle-plus text-white me-2 fs-5"
+                      ></i>
+                      Add Item
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./vendor/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./custom/app.js"></script>
+  <script src="./custom/select.js"></script>
+</html>
